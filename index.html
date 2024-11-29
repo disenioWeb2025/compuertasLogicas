@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Desafíos</title>
+</head>
+<body>
+
+    <!-- Introducción -->
+    <div class="intro">
+        <div class="intro-text">
+            <h2>Desafíos con puertas lógicas</h2>
+            <p>
+                Para este conjunto de desafíos, su tarea es diseñar circuitos de puertas lógicas
+                para producir la salida deseada para las entradas dadas, como se describe en cada desafío.
+                Puede combinar tantas puertas lógicas como sea necesario utilizando las puertas lógicas 
+                estándar (NOT, AND, OR)
+            </p>
+        </div>
+        <div class="intro-image">
+            <img src="imagenes/imagenIntro.png" alt="circuitos">
+        </div>
+    </div>
+
+    <!-- Contenedor General -->
+    <div class="container">
+        <!-- Pestañas -->
+        <div class="tabs-container">
+            <div class="tabs tabs-new">
+                <button class="tab" id="tab1" onclick="switchTab(1)">Desafío #1</button>
+                <button class="tab" id="tab2" onclick="switchTab(2)">Desafío #2</button>
+                <button class="tab" id="tab3" onclick="switchTab(3)">Desafío #3</button>
+                <button class="tab" id="tab4" onclick="switchTab(4)">Desafío #4</button>
+                <button class="tab" id="tab5" onclick="switchTab(5)">Desafío #5</button>
+            </div>
+            <!-- Línea Horizontal -->
+            <div class="separator"></div>
+
+            <!-- Contenido de los Desafíos -->
+            <div class="desafios-content">
+            
+                <div class="tab-content" id="content1">
+                    <h2>Desafío #1</h2>
+                    <p>La bombilla solo debe estar encendida cuando...</p>
+                    <ul>
+                        <li>Ambas entradas A y B están activadas mientras que la entrada C está desactivada</li>
+                        <li>O</li>
+                        <li>Ambas entradas A y B están apagadas mientras que la entrada C está encendida</li>
+                        <iframe src="https://www.101computing.net/logic-gates-studio/?q={%22canvas%22:{%22x%22:-486,%22y%22:-244},%22circuits%22:[{%22t%22:%22button%22,%22id%22:0,%22x%22:-16,%22y%22:104,%22d%22:false},{%22t%22:%22light%22,%22id%22:5,%22x%22:596,%22y%22:171},{%22t%22:%22button%22,%22id%22:6,%22x%22:-18,%22y%22:209,%22d%22:false},{%22t%22:%22lbl%22,%22id%22:7,%22x%22:-101,%22y%22:103,%22d%22:%22A%22},{%22t%22:%22lbl%22,%22id%22:8,%22x%22:-104,%22y%22:211,%22d%22:%22B%22},{%22t%22:%22button%22,%22id%22:9,%22x%22:-17,%22y%22:314,%22d%22:false},{%22t%22:%22lbl%22,%22id%22:10,%22x%22:-103,%22y%22:318,%22d%22:%22C%22}]}" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+                <div class="tab-content" id="content2">
+                    <h2>Desafío #2</h2>
+                    <p>Contenido del desafío 2...</p>
+                    <iframe src="https://logic.ly/demo/" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+                <div class="tab-content" id="content3">
+                    <h2>Desafío #3</h2>
+                    <p>Contenido del desafío 3...</p>
+                </div>
+                <div class="tab-content" id="content4">
+                    <h2>Desafío #4</h2>
+                    <p>Contenido del desafío 4...</p>
+                </div>
+                <div class="tab-content" id="content5">
+                    <h2>Desafío #5</h2>
+                    <p>Contenido del desafío 5...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

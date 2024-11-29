@@ -1,0 +1,148 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente común para todo el cuerpo */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para la sección de introducción */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro-text {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-size: 16px; /* Igual que el tamaño de fuente de los desafíos */
+    color: #555; /* Mismo color de texto de los desafíos */
+    line-height: 1.5; /* Igual al contenido de los desafíos para que el texto no se vea apretado */
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 22px; /* Para asegurar que el tamaño de los encabezados coincida con los de los desafíos */
+    color: #8e44ad; /* Mismo color de los títulos en los desafíos */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px; /* Igual que el tamaño de los párrafos en los desafíos */
+    color: #555; /* Mismo color que el contenido de los desafíos */
+    line-height: 1.5; /* Asegura que el texto esté espaciado de manera adecuada */
+}
+
+/* Contenedor de las pestañas */
+.tabs-container {
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.tabs-new {
+    display: flex;
+    justify-content: flex-start;
+    background: linear-gradient(45deg, #8e44ad, #c13584); /* Degradado rosa a morado */
+    padding: 0;
+}
+
+.tab {
+    background-color: transparent; /* Fondo transparente para las pestañas */
+    color: #fff; /* Color de texto blanco por defecto */
+    border: 2px solid #d1d1d1; /* Borde gris claro */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    margin: 0;
+}
+
+.tab:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente cuando se pasa el ratón */
+}
+
+.tab.active {
+    background-color: white; /* Fondo blanco cuando está activo */
+    color: #8e44ad; /* Texto rosa oscuro para la pestaña activa */
+    border-color: #8e44ad; /* Borde rosa oscuro cuando está activo */
+}
+
+/* Separador de las pestañas */
+.separator {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* Estilos para los contenidos */
+.content {
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #8e44ad; /* Borde rosa oscuro */
+    border-radius: 10px;
+    display: none; /* Ocultar contenido por defecto */
+}
+
+/* Estilo para los contenidos activos */
+.tab-content {
+    display: none; /* Todos los contenidos están ocultos inicialmente */
+    margin-bottom: 20px;
+    border: 2px solid transparent; /* Borde transparente por defecto */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro para cada desafío */
+}
+
+/* Mostrar el contenido cuando está activo */
+.tab-content.active {
+    display: block; /* Solo se muestra el contenido activo */
+    border: 2px solid #8e44ad; /* Borde alrededor del contenido activo */
+    background-color: #fff; /* Fondo blanco cuando el contenido está activo */
+    margin: 15px 0; /* Añadimos margen alrededor para separar el contenido */
+}
+
+/* Estilo de los marcos de cada desafío */
+.tab-content {
+    margin-bottom: 20px;
+    border: 2px solid #8e44ad; /* Borde rosa */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para los nombres de los desafíos dentro de los marcos */
+.tab-content h2 {
+    font-size: 22px;
+    color: #8e44ad; /* Color rosa para los títulos */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.tab-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilos para las listas dentro de los contenidos */
+ul {
+    font-size: 16px;
+    color: #555;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
